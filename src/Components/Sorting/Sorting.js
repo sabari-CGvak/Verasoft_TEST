@@ -4,7 +4,6 @@ const useSortableData = (products, config = null) => {
   const [sortConfig, setSortConfig] = useState(config);
 
   const sortedItems = useMemo(() => {
-    debugger;
     const sortedProducts = [...products];
     if (sortConfig !== null) {
       sortedProducts.sort((a, b) => {
@@ -20,8 +19,7 @@ const useSortableData = (products, config = null) => {
     return sortedProducts;
   }, [products, sortConfig]);
 
-  const requestSort = key => {
-    debugger;
+  const requestSortFn = key => {
     let direction = "ascending";
     if (
       sortConfig &&
@@ -33,7 +31,7 @@ const useSortableData = (products, config = null) => {
     setSortConfig({ key,direction });
   };
 
-  return { items: sortedItems, requestSort, sortConfig };
+  return { items: sortedItems, requestSortFn, sortConfig };
 };
 
 export default useSortableData;

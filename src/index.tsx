@@ -5,8 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import storeConfig from "./Store/Store";
 
-import App from './App';
-import EvoTestDesign from './Components/Evo-Test-Design/Evo-Test-Design';
+import EvoTestDesign from './Pages/Orders';
 
 const store = storeConfig();
 

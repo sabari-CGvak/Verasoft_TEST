@@ -5,7 +5,6 @@ p {
 
 table {
     width: 100%;
-    border: solid 1px grey;
     border-collapse: collapse;
 
     thead {
@@ -14,9 +13,10 @@ table {
                 cursor: pointer;
                 text-align: left;
                 border-bottom: solid 1px #E5E5E5;
-                padding-top: 16px;
-                padding-bottom: 16px;
+                padding: 10px 15px;
                 border-collapse: collapse;
+                color: #444444;
+                font: normal normal normal 10px/11px Arial;
             }
             th.ascending::after {
                 display: inline-bloc;
@@ -32,28 +32,25 @@ table {
         tr {
             td {
                 border-bottom: solid 1px #E5E5E5;
-                padding-top: 8px;
-                padding-bottom: 8px;
+               padding: 8px 15px;
 
                 .date_frm{
                     text-transform: capitalize;
                     .title{
-                        font-size: 16px;
-                        font-weight: 500;
                         margin-bottom: 10px;
+                        font: normal normal normal 16px/22px Open Sans;
                     }
                     .sub_title{
-                        font-size: 14px;
+                        font: normal normal normal 14px/19px Open Sans;
                     }
                 }
                 .subject{
                     .title{
-                        font-size: 16px;
-                        font-weight: 500;
+                        font: normal normal normal 16px/22px Open Sans;
                         margin-bottom: 10px;
                     }
                     .sub_title{
-                        font-size: 14px;
+                        font: normal normal normal 14px/19px Open Sans;
                     }
                 }
             }
@@ -65,14 +62,17 @@ table {
 }
 
 .short_icn {
-    width: 16px;
+    width: 10px;
     margin: 0px 15px;
 }
 .resend_btn{
-    background-color: #7D869A;
     border: 1px solid #7D869A;
     padding: 5px 20px;
     text-align: center;
     color: #fff;
     cursor: pointer;
+    font: normal normal normal 12px/14px Arial;
+    width: 88px;
+    height: 28px;
+    background: #7D869A 0% 0% no-repeat padding-box;
 }
