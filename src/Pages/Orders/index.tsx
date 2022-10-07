@@ -200,7 +200,7 @@ const EvoTestDesign: FC<props>  = ({summary, orders}): ReactElement => {
               <button className={tabsub_button && subtabActive === 1 ? 'button_active tab_btn' : 'tab_btn'} onClick={() => isOpenSubTabs(1)}>Sent</button>
               <button className={tabsub_button && subtabActive === 2 ? 'button_active tab_btn' : 'tab_btn'} onClick={() => isOpenSubTabs(2)}>Errors</button>
 
-              {!tabsub_button && !orders?.data?.orders_AAA?.sent &&
+              {orders?.data?.orders_AAA?.sent &&
                 <div className="title">RECENT ORDERS</div>
               }
             </div>

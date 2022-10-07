@@ -162,6 +162,8 @@
 .tab_body {
     background-color: #F2F2F2;
     border-top: 1px solid #D4D4D4;
+    border-bottom: 2px solid #4D4D4D;
+    margin-bottom: 2px;
 
     ul {
         display: flex;
@@ -172,7 +174,7 @@
         li {
             list-style-type: none;
             background-color: #D2D2D2;
-            margin: 30px 1px 5px;
+            margin: 30px 1px 0px;
             padding: 7px 40px;
             text-transform: uppercase;
             cursor: pointer;
@@ -200,9 +202,10 @@
             text-align: center;
             color: #ffffff;
             font-weight: 500;
-            top: 13px;
-            left: calc(100vw - 53%);
+            left: 45%;
+            top: 12px;
             position: absolute;
+            width: -moz-fit-content;
             width: fit-content;
         }
     }
