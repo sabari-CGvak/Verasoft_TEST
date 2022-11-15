@@ -102,6 +102,9 @@
         margin-top: 11px;
         width: 63px;
         height: 72px;
+        top: 0;
+        left: 7px;
+        position: relative;
     }
 
     p {
@@ -120,13 +123,37 @@
         li {
             list-style-type: none;
             display: flex;
+            width: -moz-fit-content;
             width: fit-content;
             margin: 6px 0px;
+            position: relative;
+            padding-left: 28px;
+
+            .smart_ph_icn {
+                width: "13px";
+                left: "11px";
+            }
+
+            .wid_12px {
+                width: "12px"
+            }
+
+            .img_home_icn {
+                width: "16px";
+                left: "10px";
+            }
+
+            .image_arroba_icn {
+                width: "14px";
+                left: "11px"
+            }
 
             img {
-                padding: 2px 2px 2px 12px;
                 width: 12px;
                 height: 14px;
+                position: absolute;
+                top: 0;
+                left: 12px;
             }
 
             .content {
@@ -139,7 +166,7 @@
 
 .communication_activity_body {
     .title {
-        padding: 15px 0px;
+        padding: 7px 0px 6px;
         font: normal normal normal 12px/17px Open Sans;
         color: #333333;
         font-family: Open Sans, Regular;
@@ -150,7 +177,7 @@
 
         .card {
             flex: auto;
-            margin: 10px 0px 0px 0px;
+            padding: 29px 0px 0px 0px;
 
             .number {
                 margin: -26px 0px 0px;
@@ -163,7 +190,7 @@
             .data {
                 background: #D5DCE5;
                 color: #333333;
-                padding: 6px 0px;
+                padding: 5px 0px;
                 text-transform: uppercase;
                 font: normal normal 600 10px/14px Open Sans;
             }
@@ -211,13 +238,13 @@
 
     .recent_orders {
         background-color: #7D869A;
-        padding: 9px;
+        padding: 15px 10px;
         position: relative;
 
         .title {
             margin: auto;
             left: 45%;
-            top: 12px;
+            top: 16px;
             position: absolute;
             width: -moz-fit-content;
             width: fit-content;
@@ -229,7 +256,6 @@
     }
 
     .tab_btn {
-        padding: 7px 0px;
         border-radius: 20px;
         border: 1px solid #7d869a;
         background-color: transparent;
@@ -240,6 +266,7 @@
         font: normal normal normal 10px/11px Arial;
         width: 67px;
         height: 23px;
+        padding: 7px 0px;
     }
 
     .button_active {
@@ -254,4 +281,33 @@
         font-size: 21px;
         color: #CCCCCC;
     }
+}
+
+.wid_239px {
+    width: 239px;
+}
+.wid_97px{
+    width: 97px;
+}
+.pad_0px{
+    padding: 0px;
+}
+.wid_185px{
+    width: 185px;
+}
+.sms_carrer{
+    padding: '0px';
+    background-color: '#EDFFED';
+    width:"225px";
+    .data{
+        background-color: '#D5E5D5'
+    }
+}
+
+.mar_lr_20px{
+    margin: 0px 20px;
+}
+
+.wid_225px{
+    width: 225px;
 }

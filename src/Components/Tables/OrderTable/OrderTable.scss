@@ -13,10 +13,11 @@ table {
                 cursor: pointer;
                 text-align: left;
                 border-bottom: solid 1px #E5E5E5;
-                padding: 7px 15px;
+                padding: 10px 15px 7px;
                 border-collapse: collapse;
                 color: #444444;
                 font: normal normal normal 10px/11px Arial;
+                height: 11px;
             }
 
             th.ascending::after {
@@ -88,6 +89,7 @@ table {
     height: 28px;
     background: #7D869A 0% 0% no-repeat padding-box;
     border-radius: 2px;
+    text-transform: uppercase;
 }
 .btn_right_align{
     display: flex;
