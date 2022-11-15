@@ -69,7 +69,11 @@ export default ({ products, column }) => {
                                 </div>
 
                             </td>
-                            <td><button className="resend_btn">Resend</button> </td>
+                            <td>
+                                <div className='btn_right_align'>
+                                    <button className="resend_btn">Resend</button>
+                                </div>
+                            </td>
                         </tr>
                     );
                 })}
